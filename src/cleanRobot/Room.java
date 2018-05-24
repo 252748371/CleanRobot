@@ -91,27 +91,27 @@ public class Room extends JFrame implements Runnable{
 
 
 		//(2)
-//		build(1,18);
-//		build(1,19);
-//		build(1,20);
-//		build(2,18);
-//		build(2,19);
-//		build(2,20);
-//		build(9,1);
-//		build(9,2);
-//		build(9,3);
-//		build(10,1);
-//		build(10,2);
-//		build(10,3);
-//		build(11,1);
-//		build(11,2);
-//		build(11,3);
-//
-//		build(14,18);
-//		build(15,18);
-//		build(16,18);
-//		build(16,19);
-//		build(16,20);
+		build(1,18);
+		build(1,19);
+		build(1,20);
+		build(2,18);
+		build(2,19);
+		build(2,20);
+		build(9,1);
+		build(9,2);
+		build(9,3);
+		build(10,1);
+		build(10,2);
+		build(10,3);
+		build(11,1);
+		build(11,2);
+		build(11,3);
+
+		build(14,18);
+		build(15,18);
+		build(16,18);
+		build(16,19);
+		build(16,20);
 
 	}
 

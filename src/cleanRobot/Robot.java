@@ -3,11 +3,8 @@ package cleanRobot;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import javax.sound.midi.Track;
 
 public class Robot {
 	
@@ -51,6 +48,19 @@ public class Robot {
 		//全图扫地完成，停止移动
 		if((dir == Direction.U && x==20 && y==1) || (dir == Direction.D && x==20 && y==20) 
 				|| (dir == Direction.U && oMap.containsKey(x+"-"+(y-1)) && x==20) ) {
+			x = 1;
+			y = 1;
+			dir = Direction.D;
+			pre = 0;
+			cur = 1;
+			meetOb = false;
+			meetOb_a = false;
+			meetOb2 =false;
+			meetOb2_a = false;
+			meetDead_1 = false;
+			meetDead_2 = false;
+			meetDead_21 = false;
+			passList.clear();
 			return;
 		}
 		//pass
