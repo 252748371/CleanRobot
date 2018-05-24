@@ -37,31 +37,82 @@ public class Room extends JFrame implements Runnable{
 		new Thread(room).start();
 	}
 
+	private void build(int x, int y) {
+		String key = x+"-"+y;
+		oMap.put(key, new Obstacle(x, y));
+	}
+
 	private void buildObstacle() {
-//		oMap.put("3-18", new Obstacle(3, 18));
-		oMap.put("4-18", new Obstacle(4, 18));
-		oMap.put("5-18", new Obstacle(5, 18));
-		oMap.put("6-20", new Obstacle(6, 20));
-		oMap.put("6-18", new Obstacle(6, 18));
-		oMap.put("6-19", new Obstacle(6, 19));
-//		oMap.put("9-11", new Obstacle(9, 11));
-//		oMap.put("10-11", new Obstacle(10, 11));
-//		oMap.put("11-11", new Obstacle(11, 11));
-//		oMap.put("12-11", new Obstacle(12, 11));
-//		oMap.put("8-9", new Obstacle(8, 9));
-//		oMap.put("9-9", new Obstacle(9, 9));
-//		oMap.put("10-9", new Obstacle(10, 9));
-//		oMap.put("11-9", new Obstacle(11, 9));
-//		oMap.put("11-10", new Obstacle(11, 10));
-//		oMap.put("11-11", new Obstacle(11, 11));
-//		oMap.put("11-12", new Obstacle(11, 12));
-//		oMap.put("10-12", new Obstacle(10, 12));
-//		oMap.put("10-11", new Obstacle(10, 11));
-//		oMap.put("10-10", new Obstacle(10, 10));
-//		oMap.put("11-13", new Obstacle(11, 13));
-//		oMap.put("12-13", new Obstacle(12, 13));
-//		oMap.put("13-13", new Obstacle(13, 13));
-//		oMap.put("14-13", new Obstacle(14, 13));
+		//(1)
+//		build(1,15);
+//		build(1,16);
+//		build(1,17);
+//		build(1,18);
+//		build(1,19);
+//		build(1,20);
+//		build(2,15);
+//		build(2,16);
+//		build(2,17);
+//		build(2,18);
+//		build(2,19);
+//		build(2,20);
+//		build(6,1);
+//		build(6,2);
+//		build(6,3);
+//		build(7,1);
+//		build(7,2);
+//		build(7,3);
+//		build(8,1);
+//		build(8,2);
+//		build(8,3);
+//		build(9,1);
+//		build(9,2);
+//		build(9,3);
+//		build(7,10);
+//		build(7,11);
+//		build(8,10);
+//		build(8,11);
+//		build(13,13);
+//		build(13,14);
+//		build(14,13);
+//		build(14,14);
+//		build(15,13);
+//		build(15,14);
+//		build(16,13);
+//		build(16,14);
+//		build(17,19);
+//		build(17,20);
+//		build(18,19);
+//		build(18,20);
+//		build(19,19);
+//		build(19,20);
+//		build(20,19);
+//		build(20,20);
+
+
+		//(2)
+//		build(1,18);
+//		build(1,19);
+//		build(1,20);
+//		build(2,18);
+//		build(2,19);
+//		build(2,20);
+//		build(9,1);
+//		build(9,2);
+//		build(9,3);
+//		build(10,1);
+//		build(10,2);
+//		build(10,3);
+//		build(11,1);
+//		build(11,2);
+//		build(11,3);
+//
+//		build(14,18);
+//		build(15,18);
+//		build(16,18);
+//		build(16,19);
+//		build(16,20);
+
 	}
 
 	@Override
@@ -93,7 +144,7 @@ public class Room extends JFrame implements Runnable{
 
 	@Override
 	public void run() {
-		while(true) {
+		for(;;) {
 			try {
 				Thread.sleep(70);
 			} catch (InterruptedException e) {

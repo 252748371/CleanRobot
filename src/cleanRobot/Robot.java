@@ -48,9 +48,6 @@ public class Robot {
 	}
 	
 	public void move() {
-//		System.out.println("x:"+x+" "+"y:"+y);
-//		System.out.println("cur:"+cur+" "+"pre:"+pre);
-//		System.out.println("");
 		//全图扫地完成，停止移动
 		if((dir == Direction.U && x==20 && y==1) || (dir == Direction.D && x==20 && y==20) 
 				|| (dir == Direction.U && oMap.containsKey(x+"-"+(y-1)) && x==20) ) {
