@@ -44,74 +44,86 @@ public class Room extends JFrame implements Runnable{
 
 	private void buildObstacle() {
 		//(1)
-//		build(1,15);
-//		build(1,16);
-//		build(1,17);
-//		build(1,18);
-//		build(1,19);
-//		build(1,20);
-//		build(2,15);
-//		build(2,16);
-//		build(2,17);
-//		build(2,18);
-//		build(2,19);
-//		build(2,20);
-//		build(6,1);
-//		build(6,2);
-//		build(6,3);
-//		build(7,1);
-//		build(7,2);
-//		build(7,3);
-//		build(8,1);
-//		build(8,2);
-//		build(8,3);
-//		build(9,1);
-//		build(9,2);
-//		build(9,3);
-//		build(7,10);
-//		build(7,11);
-//		build(8,10);
-//		build(8,11);
-//		build(13,13);
-//		build(13,14);
-//		build(14,13);
-//		build(14,14);
-//		build(15,13);
-//		build(15,14);
-//		build(16,13);
-//		build(16,14);
-//		build(17,19);
-//		build(17,20);
-//		build(18,19);
-//		build(18,20);
-//		build(19,19);
-//		build(19,20);
-//		build(20,19);
-//		build(20,20);
-
-
-		//(2)
+		build(1,15);
+		build(1,16);
+		build(1,17);
 		build(1,18);
 		build(1,19);
 		build(1,20);
+		build(2,15);
+		build(2,16);
+		build(2,17);
 		build(2,18);
 		build(2,19);
 		build(2,20);
+		build(6,1);
+		build(6,2);
+		build(6,3);
+		build(7,1);
+		build(7,2);
+		build(7,3);
+		build(8,1);
+		build(8,2);
+		build(8,3);
 		build(9,1);
 		build(9,2);
 		build(9,3);
-		build(10,1);
-		build(10,2);
-		build(10,3);
-		build(11,1);
-		build(11,2);
-		build(11,3);
+		build(7,10);
+		build(7,11);
+		build(8,10);
+		build(8,11);
+		build(13,13);
+		build(13,14);
+		build(14,13);
+		build(14,14);
+		build(15,13);
+		build(15,14);
+		build(16,13);
+		build(16,14);
+		build(17,19);
+		build(17,20);
+		build(18,19);
+		build(18,20);
+		build(19,19);
+		build(19,20);
+		build(20,19);
+		build(20,20);
 
-		build(14,18);
-		build(15,18);
-		build(16,18);
-		build(16,19);
-		build(16,20);
+
+		//(2)
+//		build(1,18);
+//		build(1,19);
+//		build(1,20);
+//		build(2,18);
+//		build(2,19);
+//		build(2,20);
+//		build(9,1);
+//		build(9,2);
+//		build(9,3);
+//		build(10,1);
+//		build(10,2);
+//		build(10,3);
+//		build(11,1);
+//		build(11,2);
+//		build(11,3);
+
+//		build(14,18);
+//		build(15,18);
+//		build(16,18);
+//		build(16,19);
+//		build(16,20);
+
+//		build(6,18);
+//		build(5,18);
+//		build(4,18);
+//		build(4,20);
+//		build(4,19);
+
+//		build(5,3);
+//		build(4,3);
+//		build(3,3);
+//		build(3,1);
+//		build(3,2);
 
 	}
 
@@ -146,7 +158,7 @@ public class Room extends JFrame implements Runnable{
 	public void run() {
 		for(;;) {
 			try {
-				Thread.sleep(70);
+				Thread.sleep(30);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}

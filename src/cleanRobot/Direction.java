@@ -1,5 +1,5 @@
 package cleanRobot;
 
 public enum Direction {
-	L,U,R,D,LU
+	L,U,R,D
 }
